@@ -310,6 +310,8 @@ def main():
     ] + pip_flags + [tljh_repo_path])
     logger.info('Setup tljh package')
 
+    logger.info('Hub prefix: ' + hub_prefix)
+
     logger.info('Starting TLJH installer...')
     os.execv(
         os.path.join(hub_prefix, 'bin', 'python3'),
