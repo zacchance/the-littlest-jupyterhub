@@ -265,7 +265,7 @@ def ensure_user_environment(user_requirements_txt_file):
     miniconda_installer_sha256 = "8a324adcc9eaf1c09e22a992bb6234d91a94146840ee6b11c114ecadafc68121"
 
     if conda.check_miniconda_version(USER_ENV_PREFIX, miniconda_new_version):
-        conda_version = '4.8.1'
+        conda_version = 'py37_4.8.2'
     elif conda.check_miniconda_version(USER_ENV_PREFIX, miniconda_old_version):
         conda_version = '4.5.8'
     # If no prior miniconda installation is found, we can install a newer version
