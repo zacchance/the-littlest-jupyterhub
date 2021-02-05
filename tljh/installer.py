@@ -279,7 +279,7 @@ def ensure_user_environment(user_requirements_txt_file):
             print('Install path: ' + installer_path)
             print('USER_ENV_PREFIX: ' + USER_ENV_PREFIX)
             conda.install_miniconda(installer_path, USER_ENV_PREFIX)
-        conda_version = '4.8.1'
+        conda_version = '4.8.2'
 
     conda.ensure_conda_packages(USER_ENV_PREFIX, [
         # Conda's latest version is on conda much more so than on PyPI.
